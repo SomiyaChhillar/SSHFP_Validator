@@ -9,7 +9,7 @@ Make sure to install the required dependencies using the following commands:
 pip install dnspython
 pip install paramiko
 
-How to Run
+# How to Run
 Follow the order below to run the provided scripts:
 
 Run preprocess_convert_json_to_csv.py.
@@ -29,7 +29,7 @@ Run get_host_sshfp_records.py.
 Outputs the file sshp_records_for_host_nslookup.csv.
 Make sure to check the respective output files after running each script.
 
-File Descriptions
+# File Descriptions
 ssh_database1.csv: Initial SSH database in CSV format.
 ssh_database_final.csv: Processed SSH database with SSH-enabled hosts.
 IP_hostnames_nslookup.csv: Hostnames retrieved through DNS lookups.
