@@ -2,36 +2,32 @@
 
 This project retrieves SSH key information for a list of IP addresses and performs additional preprocessing steps. The process involves converting JSON to CSV, checking for SSH-enabled hosts, performing DNS lookups for hostnames, and retrieving SSHFP records for domains and hosts.
 
-## Installations
+# Installations
 
 Make sure to install the required dependencies using the following commands:
 
+```bash
 pip install dnspython
 pip install paramiko
+```
 
 # How to Run
-Follow the order below to run the provided scripts:
+To execute the project files in the correct order, you can use the provided shell script.
 
-Run preprocess_convert_json_to_csv.py.
+1. Open your terminal.
+2. Navigate to the project directory
+   ```bash
+   cd /path_to_your_project
+3. Run the following command to execute the scripts:
+   ```bash
+   ./run_script.sh
+4. The provided run_scripts.sh script will run the necessary Python files in the required order. Ensure that you have the appropriate permissions to execute the script:
+   ```bash
+   chmod +x run_script.sh
 
-Outputs the file ssh_database1.csv.
-Run preprocess_get_ssh_enabled.py.
-
-Outputs the file ssh_database_final.csv.
-Run preprocess_get_nslookup_hostnames.py.
-
-Outputs the file IP_hostnames_nslookup.csv.
-Run get_domain_sshfp_records.py.
-
-Outputs the file sshp_records_for_domains.csv.
-Run get_host_sshfp_records.py.
-
-Outputs the file sshp_records_for_host_nslookup.csv.
-Make sure to check the respective output files after running each script.
-
-# File Descriptions
-ssh_database1.csv: Initial SSH database in CSV format.
-ssh_database_final.csv: Processed SSH database with SSH-enabled hosts.
-IP_hostnames_nslookup.csv: Hostnames retrieved through DNS lookups.
-sshp_records_for_domains.csv: SSHFP records for domains.
-sshp_records_for_host_nslookup.csv: SSHFP records for hostnames obtained through DNS lookups.
+# Output Files
+- ssh_database1.csv: Output of preprocess_convert_json_to_csv.py
+- ssh_database_final.csv: Output of preprocess_get_ssh_enabled.py
+- IP_hostnames_nslookup.csv: Output of preprocess_get_nslookup_hostnames.py
+- sshp_records_for_domains.csv: Output of get_domain_sshfp_records.py
+- sshp_records_for_host_nslookup.csv: Output of get_host_sshfp_records.py
