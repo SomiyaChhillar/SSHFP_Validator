@@ -31,3 +31,9 @@ To execute the project files in the correct order, you can use the provided shel
 - IP_hostnames_nslookup.csv: Output of preprocess_get_nslookup_hostnames.py
 - sshp_records_for_domains.csv: Output of get_domain_sshfp_records.py
 - sshp_records_for_host_nslookup.csv: Output of get_host_sshfp_records.py
+- IP_domain_sshfp_and_serverKeys.csv: Output of get_server_keys_for_domain.py
+- IP_hosts_sshfp_and_serverKeys.csv: Output of get_server_keys_for_hosts.py
+- IP_domain_sshfp_and_serverKeys_final.csv: Output of post_process_keys.py
+- IP_hosts_sshfp_and_serverKeys_final.csv: Output of post_process_keys.py
+- IP_domain_sshfp_and_serverKeys_comparison.csv: Output of comparison.py
+- IP_hosts_sshfp_and_serverKeys_comparison.csv: Output of comparison.py
