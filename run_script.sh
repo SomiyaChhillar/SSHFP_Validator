@@ -25,4 +25,20 @@ echo "Running get_host_sshfp_records.py..."
 python get_host_sshfp_records.py
 echo "Done."
 
+# Run get_server_keys_for_domains.py
+echo "Running get_server_keys_for_domains.py..."
+get_server_keys_for_domains.py
+
+# Run get_server_keys_for_hosts.py
+echo "Running get_server_keys_for_hosts.py..."
+get_server_keys_for_hosts.py
+
+# Run post_process_keys.py
+echo "Running post_process_keys.py..."
+post_process_keys.py
+
+# Run comparison.py
+echo "Running comparison.py..."
+comparison.py
+
 echo "All scripts executed successfully."
