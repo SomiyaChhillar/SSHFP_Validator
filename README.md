@@ -37,3 +37,5 @@ To execute the project files in the correct order, you can use the provided shel
 - IP_hosts_sshfp_and_serverKeys_final.csv: Output of post_process_keys.py
 - IP_domain_sshfp_and_serverKeys_comparison.csv: Output of comparison.py
 - IP_hosts_sshfp_and_serverKeys_comparison.csv: Output of comparison.py
+- IP_hosts_sshfp_and_serverKeys_comparison_dnssec.csv: Output of validate.py
+- IP_domain_sshfp_and_serverKeys_comparison_dnssec.csv: Output of validate.py
